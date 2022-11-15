@@ -14,37 +14,66 @@ sidebar:
 
 ## What is Computer Vision? 
 
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-1](https://user-images.githubusercontent.com/105587839/201809020-b1673121-0c50-4a9c-b695-13203293c5c4.jpg)   
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-1](https://user-images.githubusercontent.com/105587839/201809020-b1673121-0c50-4a9c-b695-13203293c5c4.jpg)
+   
 CS231n은 Computer Vision에 관한 것입니다.   
 Computer Vision은 visual data에 대한 연구입니다.   
+   
 전세계적으로 sensor가 많아 visual data가 엄청나게 많은 양이 쏟아지고 있다.   
 이 data를 활용하고 이해할 수 있는 algorithm을 개발하는 것이 매우 중요하다.   
 Computer Vision은 문제가 있는데 우주의 암흑물질처럼 인터넷의 visual data 또한 algorithm이 실제로 web의 모든 visual data를 구성하는 것이 정확이 무엇인지 이해하고 확인하는 것이 매우 어렵다.(ex. youtube)   
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-2](https://user-images.githubusercontent.com/105587839/201809294-a41ce56f-27c8-41a8-861c-94208aaf2599.jpg)   
+   
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-2](https://user-images.githubusercontent.com/105587839/201809294-a41ce56f-27c8-41a8-861c-94208aaf2599.jpg)
+   
 Computer Vision은 많은 다양한 분야의 science, engineering 그리고 technology을 다루고 있다.   
-
+   
 ## Today's agenda
 
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-5](https://user-images.githubusercontent.com/105587839/201809315-faacc3e6-c65b-4b96-a4a1-7439d646d248.jpg)   
-간단한 Computer Vision의 역사와 CS231n의 overview를 할 것이다.   
-
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-5](https://user-images.githubusercontent.com/105587839/201809315-faacc3e6-c65b-4b96-a4a1-7439d646d248.jpg)
+    
+간단한 Computer Vision의 역사와 CS231n의 overview를 할 것이다.  
+   
 ### A brief history of Computer Vision
 
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-6](https://user-images.githubusercontent.com/105587839/201809323-4ac84d8e-be69-4b4a-b078-0afeafd1fcf2.jpg)   
-Vision
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-7](https://user-images.githubusercontent.com/105587839/201809328-5c83d22a-8794-477a-92eb-4696008d0ca1.jpg)   
-
-
-
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-6](https://user-images.githubusercontent.com/105587839/201809323-4ac84d8e-be69-4b4a-b078-0afeafd1fcf2.jpg)
+   
+(Biological Vision)   
+Vision의 역사는 약 5억 4300만년 전으로 거슬러 올라갑니다.   
+지구는 대부분 물이었고 동물은 많이 움직이지도 않고 눈도 없고 떠다녔습니다.   
+약 5억 4천만년 전 놀라운 일이 일어납니다.   
+   
+천만년 안에 동물 종의 수가 폭발적으로 증가했다는 사실을 발견합니다.   
+원인은 무엇일까요?   
+많은 이론이 있었지만 Andrew Parker가 가장 설득력 있는 이론 중 하나를 제안합니다.   
+최초의 동물은 눈을 발달시켰고 vision의 시작은 폭발적인 종분화 단계를 시작했다는 것입니다.   
+이로 인해 삶이 훨씬 더 능동적이 되었습니다.   
+예를 들면, 일부 predators는 먹이를 쫓았고 먹이는 predators로부터 도망을 다녔습니다.   
+   
+동물은 생존하기 위해 빠르게 진화해야 했기 때문에 시각은 거의 모든 동물의 가장 큰 감각 system으로 발전했습니다.   
+특히, 지능이 있는 인간은 visual processing에 관여하는 피질 neuron의 거의 50%를 가지고 있습니다.   
+   
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-7](https://user-images.githubusercontent.com/105587839/201809328-5c83d22a-8794-477a-92eb-4696008d0ca1.jpg)
+   
+(Mechanical Vision)   
+오늘 날 우리가 알고 있는 초기 camera 중 하나는 1600년대 르네상스 시대의 Camera Obscura이며,   
+이는 pinhole camera 이론에 기반한 camera입니다.   
+빛을 수집하는 구멍을 통해 정보를 수집하고 image를 투사하는 camera 뒷면의 평면으로 발달한 동물의 초기 눈과 매우 유사합니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-8](https://user-images.githubusercontent.com/105587839/201809341-4a4ea6b9-d054-43bc-ad14-bff8254a0748.jpg)
-
-
-
+   
+Biologists는 vision의 mechanisem을 연구하기 시작했습니다.   
+인간의 vision에서 가장 영향력 있는 작업 중 하나는 아래와 같습니다.   
+동물의 vision과 inspired된 computer vision이 electrophysiology를 사용하여 50년대와 60년대에 Hubel과 Wiesel이 수행한 작업입니다.   
+"primates(영장류)와 mammals(포유류)의 visual processing mechanism은 무엇인가?"   
+따라서, 인간의 뇌와 유사한 고양이의 뇌로 연구를 하였습니다.   
+   
+the primary visual cortex(일차 시각 피질) 영역이 있는 고양이 뇌의 뒤쪽에 전극을 몇개 붙인 다음 어떤 자극이 고양이 뇌의 the primary visual cortex(일차 시각 피질) 뒤쪽에 잇는 neuron이 흥분하게 반응하는지 살펴보는것입니다.   
+결론은, 고양이 뇌의 the primary visual cortex(일차 시각 피질) 부분에 많은 유형의 세포가 있다는 것입니다.   
+가장 중요한 세포 중 하나는 그들이 특정 방향으로 움직일 때 oriented edges에 반응하는 단순한 세포입니다.   
+그들이 발견한 것은, visual processing가 visual world의 단순한 구조, oriented edges에서 시작하고 정보가 visual processing 경로를 따라 이동함에 따라 뇌가 visual information의 복잡성을 축적한다는 것입니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-9](https://user-images.githubusercontent.com/105587839/201809352-d7e190db-523a-46e6-bfc3-89ad8161d960.jpg)
-
+   
 
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-10](https://user-images.githubusercontent.com/105587839/201809360-2e2f078a-3eb9-44d1-9635-aa2e587cd21a.jpg)
