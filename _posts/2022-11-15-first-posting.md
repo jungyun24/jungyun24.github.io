@@ -11,7 +11,7 @@ sidebar:
 # Lecture 1 | Introduction to Convolutional Neural Networks for Visual Recognition
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vT1JzLTH4G4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ***
-
+   
 ## What is Computer Vision? 
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-1](https://user-images.githubusercontent.com/105587839/201809020-b1673121-0c50-4a9c-b695-13203293c5c4.jpg)
@@ -26,13 +26,15 @@ Computer Vision은 문제가 있는데 우주의 암흑물질처럼 인터넷의
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-2](https://user-images.githubusercontent.com/105587839/201809294-a41ce56f-27c8-41a8-861c-94208aaf2599.jpg)
    
 Computer Vision은 많은 다양한 분야의 science, engineering 그리고 technology을 다루고 있다.   
+***
    
 ## Today's agenda
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-5](https://user-images.githubusercontent.com/105587839/201809315-faacc3e6-c65b-4b96-a4a1-7439d646d248.jpg)
     
 간단한 Computer Vision의 역사와 CS231n의 overview를 할 것이다.  
-   
+***
+
 ### A brief history of Computer Vision
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-6](https://user-images.githubusercontent.com/105587839/201809323-4ac84d8e-be69-4b4a-b078-0afeafd1fcf2.jpg)
@@ -74,20 +76,36 @@ the primary visual cortex(일차 시각 피질) 영역이 있는 고양이 뇌�
    
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-9](https://user-images.githubusercontent.com/105587839/201809352-d7e190db-523a-46e6-bfc3-89ad8161d960.jpg)
    
-
-
+Computer Vision의 역사도 60년대 초에 시작됩니다.   
+Block World는 Larry Roberts가 출판한 일련의 작품으로 아마도 computer vision의 첫번째 PhD 논문일 것입니다.
+visual world가 simple한 geometric shapes으로 simplified하였고, 이 shapes을 무엇인지 recognize하고 이런 shapes을 reconstruction하는것이 목표였습니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-10](https://user-images.githubusercontent.com/105587839/201809360-2e2f078a-3eb9-44d1-9635-aa2e587cd21a.jpg)
-
-
-
+   
+1966년에 "The Summer Vision Project"라는 유명한 MIT 여름 프로젝트가 있었습니다.   
+"The summer Vision Project"의 목표는 "우리의 summer workers가 효과적으로 visual system의 중요한 부분을 construction을 시도하는 것입니다."   
+(여름동안 visual system의 대부분을 해결하겠다!!)   
+이후 50년이 흘렀고 computer vision 분야는 한 여름 project에서 꽃을 피웠고 전세계적으로 수천 명의 연구자들이 vision의 가장 근본적인 문제 중 일부를 연구하고 있습니다.   
+우리는 아직 vision을 풀지 못했지만 인공지능 분야에서 가장 중요하고 빠르게 성장하는 분야 중 하나로 성장했습니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-11](https://user-images.githubusercontent.com/105587839/201809369-9a3b0ad6-cd70-4b71-81c2-ff68f150c5be.jpg)
-
-
+   
+David Marr는 MIT에서 vision 과학자였으며, 70년 대 후반에 자신이 생각하는 vision이 무엇인지, computer vision과 computer가 visual world를 recognize할 수 있는 algorithm을 개발하는 방법에 대해 영향력 있는 책을 저술했습니다.   
+   
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-12](https://user-images.githubusercontent.com/105587839/201809371-2cd4695b-1b1a-42e3-aae1-0b3b5bd5efb5.jpg)
-
-
-
+   
+David Marr의 저서에서 생각하는 과정은 image를 찍고 최종적으로 holistic full 3d representation(전체론적 전체 3D표현)에 도달하기 위해서는 몇 가지 과정을 거쳐야 한다는 것입니다.   
+   
+1st Process : Primal Sketch
+ - Primal Sketch는 대부분 the edges, the bars, the ends, the virtual lines, the curves, the boundaries를 represented되는 곳입니다.
+ - neuroscientists(신경과학자)들이 본 것 (Hubel과 Wiesel은 visual processing의 초기 단계는 edge와같은 simple structure와 관련이 있다는것)에서 많은 영감을 받았습니다.
+   
+2nd Process : 2.5D Sketch & 3rd Process : 3D Model Representation
+- the surfaces, the depth information, the layers 또는 the discontinuities of the visual scene을 조합하기 시작한 다음 결국 모든 것을 조합하고 surface 및 volumetric primitives(체적 기본요소) 등의 측면에서 hierarchically(계층적으로) 구성된 3D model을 갖게 됩니다.   
+   
+그래서 vision이 무엇인지에 대한 매우 이상적인 사고 과정이었고 이러한 사고 방식은 실제로 수십 년 동안 computer vision을 지배해 왔습니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-13](https://user-images.githubusercontent.com/105587839/201809376-92405d4f-126e-4911-81a8-4a20c7a02432.jpg)
 
 
