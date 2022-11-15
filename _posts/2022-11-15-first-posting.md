@@ -10,7 +10,8 @@ sidebar:
 ---
 # Lecture 1 | Introduction to Convolutional Neural Networks for Visual Recognition
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vT1JzLTH4G4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-***
+
+=====
    
 ## What is Computer Vision? 
 
@@ -26,14 +27,14 @@ Computer Vision은 문제가 있는데 우주의 암흑물질처럼 인터넷의
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-2](https://user-images.githubusercontent.com/105587839/201809294-a41ce56f-27c8-41a8-861c-94208aaf2599.jpg)
    
 Computer Vision은 많은 다양한 분야의 science, engineering 그리고 technology을 다루고 있다.   
-***
+=====
    
 ## Today's agenda
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-5](https://user-images.githubusercontent.com/105587839/201809315-faacc3e6-c65b-4b96-a4a1-7439d646d248.jpg)
     
 간단한 Computer Vision의 역사와 CS231n의 overview를 할 것이다.  
-***
+=====
 
 ### A brief history of Computer Vision
 
@@ -141,7 +142,7 @@ Jitendra Malik와 Berkeley의 그의 학생 Jianbo Shi가 image segmentation에 
    
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-16](https://user-images.githubusercontent.com/105587839/201809403-7c2a827c-c3d0-424a-900e-b81b965df712.jpg)
    
-   
+
 
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-17](https://user-images.githubusercontent.com/105587839/201809407-bbcc3978-65e9-4e8f-bbd9-66440c8fbf6b.jpg)
