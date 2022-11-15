@@ -12,8 +12,11 @@ sidebar:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vT1JzLTH4G4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ***
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-1](https://user-images.githubusercontent.com/105587839/201809020-b1673121-0c50-4a9c-b695-13203293c5c4.jpg)
-
-
+CS231n은 Computer Vision에 관한 것입니다.   
+Computer Vision은 visual data에 대한 연구입니다.   
+전세계적으로 sensor가 많아 visual data가 엄청나게 많은 양이 쏟아지고 있다.   
+이 data를 활용하고 이해할 수 있는 algorithm을 개발하는 것이 매우 중요하다.   
+Computer Vision은 문제가 있는데 우주의 암흑물질처럼 인터넷의 visual data 또한 algorithm이 실제로 web의 모든 visual data를 구성하는 것이 정확이 무엇인지 이해하고 확인하는 것이 매우 어렵다.(ex. youtube)   
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-2](https://user-images.githubusercontent.com/105587839/201809294-a41ce56f-27c8-41a8-861c-94208aaf2599.jpg)
 
