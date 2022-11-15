@@ -11,6 +11,9 @@ sidebar:
 # Lecture 1 | Introduction to Convolutional Neural Networks for Visual Recognition
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vT1JzLTH4G4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ***
+
+## What is Computer Vision? 
+
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-1](https://user-images.githubusercontent.com/105587839/201809020-b1673121-0c50-4a9c-b695-13203293c5c4.jpg)
 CS231n은 Computer Vision에 관한 것입니다.   
 Computer Vision은 visual data에 대한 연구입니다.   
@@ -19,23 +22,17 @@ Computer Vision은 visual data에 대한 연구입니다.
 Computer Vision은 문제가 있는데 우주의 암흑물질처럼 인터넷의 visual data 또한 algorithm이 실제로 web의 모든 visual data를 구성하는 것이 정확이 무엇인지 이해하고 확인하는 것이 매우 어렵다.(ex. youtube)   
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-2](https://user-images.githubusercontent.com/105587839/201809294-a41ce56f-27c8-41a8-861c-94208aaf2599.jpg)
+Computer Vision은 많은 다양한 분야의 science, engineering 그리고 technology을 다루고 있다.   
 
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-3](https://user-images.githubusercontent.com/105587839/201809300-07b1d1b5-58e5-4099-883d-0f5f00eeaaf7.jpg)
-
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-4](https://user-images.githubusercontent.com/105587839/201809311-1a968586-e8ed-4cf9-a34b-f23221fe0816.jpg)
-
-
+## Today's agenda
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-5](https://user-images.githubusercontent.com/105587839/201809315-faacc3e6-c65b-4b96-a4a1-7439d646d248.jpg)
+간단한 Computer Vision의 역사와 CS231n의 overview를 할 것이다.   
 
-
+### A brief history of Computer Vision
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-6](https://user-images.githubusercontent.com/105587839/201809323-4ac84d8e-be69-4b4a-b078-0afeafd1fcf2.jpg)
-
+Vision
 
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-7](https://user-images.githubusercontent.com/105587839/201809328-5c83d22a-8794-477a-92eb-4696008d0ca1.jpg)
