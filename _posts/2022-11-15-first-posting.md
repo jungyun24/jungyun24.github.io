@@ -14,28 +14,28 @@ sidebar:
 
 ## What is Computer Vision? 
 
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-1](https://user-images.githubusercontent.com/105587839/201809020-b1673121-0c50-4a9c-b695-13203293c5c4.jpg)
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-1](https://user-images.githubusercontent.com/105587839/201809020-b1673121-0c50-4a9c-b695-13203293c5c4.jpg)   
 CS231n은 Computer Vision에 관한 것입니다.   
 Computer Vision은 visual data에 대한 연구입니다.   
 전세계적으로 sensor가 많아 visual data가 엄청나게 많은 양이 쏟아지고 있다.   
 이 data를 활용하고 이해할 수 있는 algorithm을 개발하는 것이 매우 중요하다.   
 Computer Vision은 문제가 있는데 우주의 암흑물질처럼 인터넷의 visual data 또한 algorithm이 실제로 web의 모든 visual data를 구성하는 것이 정확이 무엇인지 이해하고 확인하는 것이 매우 어렵다.(ex. youtube)   
 
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-2](https://user-images.githubusercontent.com/105587839/201809294-a41ce56f-27c8-41a8-861c-94208aaf2599.jpg)
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-2](https://user-images.githubusercontent.com/105587839/201809294-a41ce56f-27c8-41a8-861c-94208aaf2599.jpg)   
 Computer Vision은 많은 다양한 분야의 science, engineering 그리고 technology을 다루고 있다.   
 
 ## Today's agenda
 
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-5](https://user-images.githubusercontent.com/105587839/201809315-faacc3e6-c65b-4b96-a4a1-7439d646d248.jpg)
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-5](https://user-images.githubusercontent.com/105587839/201809315-faacc3e6-c65b-4b96-a4a1-7439d646d248.jpg)   
 간단한 Computer Vision의 역사와 CS231n의 overview를 할 것이다.   
 
 ### A brief history of Computer Vision
 
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-6](https://user-images.githubusercontent.com/105587839/201809323-4ac84d8e-be69-4b4a-b078-0afeafd1fcf2.jpg)
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-6](https://user-images.githubusercontent.com/105587839/201809323-4ac84d8e-be69-4b4a-b078-0afeafd1fcf2.jpg)   
 Vision
 
 
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-7](https://user-images.githubusercontent.com/105587839/201809328-5c83d22a-8794-477a-92eb-4696008d0ca1.jpg)
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-7](https://user-images.githubusercontent.com/105587839/201809328-5c83d22a-8794-477a-92eb-4696008d0ca1.jpg)   
 
 
 
