@@ -7,9 +7,9 @@ main:
 docs:  
   - title: "Contents"
     children:
-      -title: "Category"
+      - title: "Category"
         url: /categories/
-      -title: "Tag"
+      - title: "Tag"
         url: /tags/
   #   url: /year-archive/
   # - title: "Sample Collections"
