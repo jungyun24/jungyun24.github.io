@@ -107,18 +107,41 @@ David Marr의 저서에서 생각하는 과정은 image를 찍고 최종적으�
 그래서 vision이 무엇인지에 대한 매우 이상적인 사고 과정이었고 이러한 사고 방식은 실제로 수십 년 동안 computer vision을 지배해 왔습니다.   
    
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-13](https://user-images.githubusercontent.com/105587839/201809376-92405d4f-126e-4911-81a8-4a20c7a02432.jpg)
-
-
-
+   
+70년대, 또 다른 매우 중요한 작업 group은 question을 묻기 시작했습니다.   
+"우리가 어떻게 단순한 block world를 넘어 real world objects를 recognizing하거나 representing을 시작할 수 있을까?"   
+70년대는 사용 가능한 data가 거의 없고 느리고 pc는 대중화되지 않았습니다.   
+   
+우리가 object를 recognize하고 represent할 수 있는 방법은   
+Stanford와 SRI의 Palo Alto에서 유사한 아이디어를 제안하는 group이 있습니다.     
+하나는 " Generalized cylinder", 다른 하는 "Pictorial Struture"   
+기본 아이디어는 모든 object가 simple geometric primitives로 구성된다는 것입니다.   
+(Ex. 사람은 generalized된 원통 모양으로 연결 혹은 이러한 부분 사이의 elastic distance에서 중요한 부분으로 연결될 수 있습니다.)   
+    
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-14](https://user-images.githubusercontent.com/105587839/201809384-ee567c3c-2e72-4270-96e4-fb684e5a77ad.jpg)
-
-
-
+(영상에서는 면도기이지만 결국 같은 의미입니다)
+   
+80년대, David Lowe는 simple world structures에서 visual world를 reconstruct하거나 recognize하는 방법을 생각하는 또른 예입니다.   
+lines과 edges, 그리고 대부분 straight lines와 그들의 조합을 constructing하여 동전(영상에서는 면도기)을 recognize합니다.   
+   
+   
+   
+**60, 70, 80년대에 computer vision의 과제가 무엇인지 생각해보려는 노력이 많았고 object recognition 문제를 해결하는 것은 매우 어려웠습니다.**
+   
+   
+   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-15](https://user-images.githubusercontent.com/105587839/201809389-e1f25858-3be8-485b-8bd6-b552175ba9ef.jpg)
-
-
+   
+object recognition이 너무 어렵다면 먼저 object segmentation을 수행하자!!   
+즉, image를 가져와 pixels을 의미 있는 영역으로 그룹화하는 작업입니다.   
+(Ex. 같이 그룹화되는 pixels을 사람이라고 하는지는 모를 수 있지만, 배경에서 사람에 속하는 모든 pixels을 추출할 수 있습니다.)   
+   
+Jitendra Malik와 Berkeley의 그의 학생 Jianbo Shi가 image segmentation에 대한 graph theory algorithm을 사용한 아주 초기의 중요한 작업이 있습니다.(ppt그림)   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-16](https://user-images.githubusercontent.com/105587839/201809403-7c2a827c-c3d0-424a-900e-b81b965df712.jpg)
-
+   
+   
 
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-17](https://user-images.githubusercontent.com/105587839/201809407-bbcc3978-65e9-4e8f-bbd9-66440c8fbf6b.jpg)
