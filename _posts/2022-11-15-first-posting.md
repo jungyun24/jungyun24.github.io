@@ -144,13 +144,25 @@ Jitendra Malik와 Berkeley의 그의 학생 Jianbo Shi가 image segmentation에 
    
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-16](https://user-images.githubusercontent.com/105587839/201809403-7c2a827c-c3d0-424a-900e-b81b965df712.jpg)
    
-
-
-
+face detection이라는 computer vision의 다른 문제가 있습니다.   
+   
+1999년에서 2000년경에는 machine learning techniques, 특히 statistical machine learning techniques가 탄력 받기 시작합니다.   
+이들은 neural networks의 첫번째 물결에 포함하여 SVM(support vector machine), boosting, graphical models과 같은 기술입니다.   
+많은 기여를 한 특정 작업 중 하나는 AdaBoost algorithm을 사용하여 Paul Viola와 Michael Jones가 Real-time face detection을 수행한 것입니다.   
+컴퓨터 칩이 매우 느리지만 거의 real-time으로 image에서 face를 detection하였으며 5년 뒤에 Fuji film의 디지털 카메라에서 상용화되었습니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-17](https://user-images.githubusercontent.com/105587839/201809407-bbcc3978-65e9-4e8f-bbd9-66440c8fbf6b.jpg)
-
-
-
+   
+object recognition을 더 잘 할 수 있는 방법을 계속 탐구하게 됩니다.   
+90년대 후반부터 2000년 첫 10년까지 매우 영향력 있는 사고 방식 중 하나는 feature 기반 object recognition입니다.   
+   
+SIFT(Scale-Invariant-Feature Transform)-David Lowe   
+예를 들어, ppt에서 stop sign인 전체 object를 다른 정지 시야로 맞추는 것은 camera angles, occlusion, viewpoint, lighting, 그리고 the intrinsic variation of the object의 변화때문에 매우 어렵습니다.   
+하지만 변화에 대해 diagnositc(진단적)이고 invariant한 경향이 있는 object의 일부, 일부 features가 있다는 것을 identifying하는 데 영감을 받았습니다.   
+따라서, object recognition은 object에서 이러한 중요한 features를 식별한 다음 features를 전체 object를 pattern 일치시키는 것보다 더 쉬운 작업입니다.   
+그래서 여기 한 stop sign의 소수, 수십 개의 SIFT features가 식별되고 다른 stop sign의 SIFT features이 일치한다는 것을 보여주는 그의 논문의 그림이 있습니다.   
+   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-18](https://user-images.githubusercontent.com/105587839/201809412-afa3b332-3810-47a4-91d9-690aac092683.jpg)
 
 
