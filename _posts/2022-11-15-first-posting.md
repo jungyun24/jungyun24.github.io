@@ -2,7 +2,7 @@
 layout: single
 title: "Lecture 1 : Introduction"
 categories: CS231n
-tags: [stanford, lecture, review, CS231n]
+tags: [stanford, lecture, review, CS231n, history, computer vision]
 toc: true
 author_profile: false
 sidebar:
@@ -162,7 +162,7 @@ SIFT(Scale-Invariant-Feature Transform)-David Lowe
 따라서, object recognition은 object에서 이러한 중요한 features를 식별한 다음 features를 전체 object를 pattern 일치시키는 것보다 더 쉬운 작업입니다.   
 그래서 여기 한 stop sign의 소수, 수십 개의 SIFT features가 식별되고 다른 stop sign의 SIFT features이 일치한다는 것을 보여주는 그의 논문의 그림이 있습니다.   
    
-   
+
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-18](https://user-images.githubusercontent.com/105587839/201809412-afa3b332-3810-47a4-91d9-690aac092683.jpg)
 
 
