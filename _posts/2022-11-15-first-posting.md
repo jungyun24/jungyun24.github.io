@@ -295,61 +295,43 @@ image에서 object가 잇는 loaction을 설명하는 box를 그립니다.
    
 그렇다면 왜 갑자기 지난 몇년 동안에 유명해졌을까요??   
  - Computation
-  - Moore's law 덕분에, 우리는 매년 점점 더 빨라지는 computer를 갖게 되엇습니다.
-  (TR(트랜지스터)의 수가 90년대와 오늘 날 사이에 몇 자리수가 증가했습니다.)
+  - Moore's law 덕분에, 우리는 매년 점점 더 빨라지는 computer를 갖게 되었습니다.
+  - TR(트랜지스터)의 수가 90년대와 오늘 날 사이에 몇 자리수가 증가했습니다.
   - super parallelizable이 가능한 graphic processing units 또는 GPU의 출현
 
-
+ - Data
+  - 이러한 algorithm은 data를 많이 필요로 합니다.
+  - 90년대에는 사용할 수 있는 label이 지정된 data가 많이 않았습니다.
+  - PASCAL 및 ImageNet과 같은 고품질의 dataset이 있습니다.
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-33](https://user-images.githubusercontent.com/105587839/201809561-e6abfa85-d0da-4b7c-a66f-8aa4b4fc278e.jpg)
-
-
+   
+Computer Vision에서 지적하고 싶은 또 다른 점은 우리가 사람처럼 볼 수 있는 기계를 구축하려는 사업에 종사하고 있다는 것입니다.
+그리고 사람들은 실제로 visual system으로 많은 놀라운 일을 할 수 있습니다. 세계를 돌아다닐 때 사물 주위에 상자를 그리고 사물을 고양이나 개로 분류하는 것보다 훨씬 더 많은 일을 합니다.
+현장에서는 아직 미해결된 문제가 많습니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-34](https://user-images.githubusercontent.com/105587839/201809563-ad1c2845-de54-4c17-9a23-157399440a1b.jpg)
-
-
-
-
+   
+이에 대한 몇 가지 예는 실제로 이러한 오래된 아이디어로 돌아가고 있습니다.
+전체 image에 labe을 지정하는 것보다 image의 모든 pixel이 무엇을 하는지, 무엇을 의미하는지 이해하고자 하는 semantic segmentation 또는 perceptual grouping와 같은 것입니다.
+그리고 이 과정의 뒷부분에서 이 개념을 다시 살펴보겠습니다.   
+전세계를 재구성하는 3D understanding이라는 개념으로 되돌아가는 작업이 분명히 있습니다.   
+이는 여전히 해결되지 않은 문제라고 생각합니다.(Ex.AR, VR)   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-35](https://user-images.githubusercontent.com/105587839/201809567-19c5b989-28f1-47ce-86ab-0e292cc26dc7.jpg)
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-36](https://user-images.githubusercontent.com/105587839/201809572-b0d79902-c62f-40e3-9e8d-5a75250d1ab5.jpg)
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-37](https://user-images.githubusercontent.com/105587839/201809577-653e362f-e9db-4736-8f59-cbea44e4f878.jpg)
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-38](https://user-images.githubusercontent.com/105587839/201809580-19ae2340-45ef-41c9-ada1-85d1998eddad.jpg)
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-39](https://user-images.githubusercontent.com/105587839/201809586-21f82a44-3710-4a66-8c47-3871af01d476.jpg)
-
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-40](https://user-images.githubusercontent.com/105587839/201809602-760c9472-06e2-464f-b4c3-7f7405f617a9.jpg)
-
-
+   
+이것은 Visual Genome이라는 이 dataset에 대한 vision lab.의 작업 중 일부의 예입니다.   
+여기서 아이디어는 우리가 실제 세계에서 이러한 복잡성 중 일부를 포기하려고 한다는 것입니다.   
+상자만 설명하는 것보다 image를 object identities뿐만 아니라 object relationships, object attributes, scene에서 일어나는 action 및 이러한 유형의 표현을 포함하는 의미론적으로 관련된 개념의 전체 큰 그래프로 설명해야 할 수도 있습니다.   
+간단한 분류를 사용할 때 table에 남아 있는 visual world의 richness 중 일부는 capture할 수 있습니다.   
+이 시점에서 이것은 결코 표준 접근 방식은 아니지만 visual system이 할 수 잇는 훨씬 더 많은 일이 이 vanilla image classification setup에서 capture되지 않을 수 잇다는 느낌을 주는 것입니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-41](https://user-images.githubusercontent.com/105587839/201809610-c4a0d617-1209-4d91-b2a7-28b562027716.jpg)
 
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-42](https://user-images.githubusercontent.com/105587839/201809615-e6a9815b-8114-4440-93fe-893884cb6081.jpg)
-
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-43](https://user-images.githubusercontent.com/105587839/201809621-e0380ca3-9ef1-407e-af06-30de0e80a451.jpg)
-
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-44](https://user-images.githubusercontent.com/105587839/201809624-f7038d48-9d42-4d9d-a62f-b7996fa02893.jpg)
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-45](https://user-images.githubusercontent.com/105587839/201809627-34171327-7862-477a-ac8a-0c57c06bbc40.jpg)
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-46](https://user-images.githubusercontent.com/105587839/201809629-fe1e5cbb-746f-4adb-828f-b569650e24e3.jpg)
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-47](https://user-images.githubusercontent.com/105587839/201809633-a67ec075-ea23-4da3-b00f-a05c0aedf093.jpg)
-
-
-
+그래서 이 수업에 대한 모든 algorithm의 deep mechanics를 정말로 이해해야 한다는 것입니다.   
+이러한 algorithm이 정확히 어떻게 작동하는 지, 이러한 NN을 함께 연결할때 정확히 어떤 일이 발생하는지, 이러한 architectural decisions이 Network가 training되고 test되는 방식 등에 어떤 영향을 미치는지 매우 deep level에서 이해해야 합니다.    
+              
+-끝-
 
 
 
