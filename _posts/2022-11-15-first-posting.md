@@ -237,32 +237,67 @@ ImageNet Challenge에서 인간과 동등하게 이 분야는 불과 몇 년이 
 이 수업은 visual recognition-image classification에 중점을 둡니다.   
 따라서 이 수업의 주요 초점은 ImageNet Challenge의 맥락에서 약간 미리 본 image classification problem입니다.   
    
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-26](https://user-images.githubusercontent.com/105587839/201809476-362a5914-9ecc-4bc9-b70e-092dc81aa91b.jpg)
+   
 Image classification에서 setup은 algorithm이 image를 본 다음 fixed된 categories 사이에서 선택하여 해당 image를 classification하는 것입니다.   
 인위적으로 보일수 있지만 실제로 일반적입니다.   
    
 그러나 이 과정에서는 image classificatio을 위해 개발하는 많은 tools를 기반으로 하는 몇 가지 다른 visual recognition problems에 대해서도 이야기할 것입니다.   
-object detection이나 image captioning과 같은 다른 문제에 대해 이야기하겠습니다.   
-  
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-26](https://user-images.githubusercontent.com/105587839/201809476-362a5914-9ecc-4bc9-b70e-092dc81aa91b.jpg)
+따라서, Object detection의 setup은 약간 다릅니다.
+   
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-27](https://user-images.githubusercontent.com/105587839/201809481-c7318103-ecf5-430b-b513-6151199b930e.jpg)
+   
+object detection이나 image captioning과 같은 다른 문제에 대해 이야기하겠습니다.
+   
+![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-28](https://user-images.githubusercontent.com/105587839/201809486-7dbc8f73-e7de-4d98-9f40-6a505a603a8d.jpg)
    
 따라서, Object detection의 setup은 약간 다릅니다.
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-27](https://user-images.githubusercontent.com/105587839/201809481-c7318103-ecf5-430b-b513-6151199b930e.jpg)
-
-
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-28](https://user-images.githubusercontent.com/105587839/201809486-7dbc8f73-e7de-4d98-9f40-6a505a603a8d.jpg)
-
-
+전체 image를 고양이나 개, 말 등으로 classify하는 대신 boudary box에 들어가서 여기에 개가 잇고 여기에 고양이가 있고 background에 자동차가 있다고 말하고 싶습니다.   
+image에서 object가 잇는 loaction을 설명하는 box를 그립니다.   
+또한 image가 주어졌을 때 system이 image를 설명하는 자연어 문장ㅇ르 생성해야 하는 image captioning에 대해서도 이야기하겠습니다.   
+정말 어렵고 복잡하고 다른 문제처럼 들리지만 image classifiation servies에서 개발하는 많은 tools가 이러한 다른 문제에서도 재사용된다는 것을 알게 될 것입니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-29](https://user-images.githubusercontent.com/105587839/201809494-f750ada4-1e41-46f9-8652-6bc519433f65.jpg)
-
-
+   
+이전에 ImageNet Challenge의 맥락에서 이것을 언급했지만 최근 몇 년 동안 이 분야의 발전을 주도한 것 중 하나는 **CNN**입니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-30](https://user-images.githubusercontent.com/105587839/201809497-236b966e-7e52-433b-ade1-9df23c3935a6.jpg)
-
+   
+지난 몇 년 동안 ImageNet Challenge에서 우승한 algorithm을 살펴보면 2011년에도 여전히 계층적인 Lin et al의 이 방법을 볼 수 있습니다.  
+여러 layer로 구성되어 있어서 먼저 몇 가지 features를 계산하고 다음으로 일부 local invariances, 일부 pooling을 계산하고 여러 계층의 처리를 거친 다음 마지막으로 이 resulting descriptor를 lienar SVN에 공급합니다.   
+여기서 알 수 있는 것은 이것이 여전히 계층적이라는 것입니다.   
+우리는 여전히 edges를 detect하고 invariance의 notion을 가지고 있습니다.   
+그리고 이러한 직관 중 많은 부분이 convnet으로 이어집니다.   
+   
+그러나 획기적인 순간은 2012년 토론토에 있는 Jeff Hinton의 group이 당시 그의 PhD 학생이었던 Alex Krizhevsky 및 Ilya Sutskever와 함께 현재 AlexNet으로 알려진 이 7 layer convolutional neural network을 만들었을 때였습니다.   
+2012년 ImageNet competition에서 매우 우수했습니다.   
+매해 Network는 더욱 deep해졌으며   
+2015년에 우리는 훨씬 더 deep한 network인 Google의 GoogleNet과 당시 약 19 layers를 가진 옥스퍼드의 VGG network인 VGG가 있었습니다.   
+또한 당시 152개 layer였던 Residual networks라는 Microsoft Research Asia에서 이 논문이 나왔습니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-31](https://user-images.githubusercontent.com/105587839/201809545-8c7d8dd4-2ed9-4d99-b59d-e91afc7b1734.jpg)
-
-
+   
+하지만 한 가지 정말 중요한 점은 convolustional networks의 돌파구가 2012년에 이 network가 ImageNet Challenge에서 매우 잘 수행되었지만 2012년에 발명된 것은 아닙니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-32](https://user-images.githubusercontent.com/105587839/201809557-ffbbe27c-4601-410e-8583-f728b23f6afe.jpg)
-
-
+   
+따라서 이 CNN 분야의 기초 작업 중 하나는 실제로 90년대에 Jan LeCun과 당시 Bell Labs에 있던 공동 작업자의 작업이었습니다.   
+그래서 1998년에 그들은 숫자를 인식하기 위해 이 CNN을 구축했습니다.   
+그들은 이것을 배치하고 우체국에 대한 손으로 쓴 수표 또는 주소를 자동으로 인식할 수 있기를 원했습니다.   
+그리고 그들은 image의 pixel을 가져올 수 있는 이 CNN을 구축한 다음 그것이 어떤 숫자인지, 어떤 문자인지 등을 분류했습니다.   
+그리고 이 Network의 structure는 실제로 2012년에 사용된 AlexNet Architecture와 매우 유사해보입니다.
+여기에서 우리는 이러한 raw pixels를 가져오고 잇음을 알 수 있습니다.   
+소위 fully connected layers(FCL)와 함께 많은 convolution 및 subsampling layer가 있습니다.   
+이 모든 것은 과정의 뒷부분에서 훨씬 더 자세히 설명될 것입니다.   
+   
+하지만 이 두 사진만 보면 꽤 비슷해보입니다.
+2012년의 architecture에는 90년대로 거슬러 올라가는 이 network와 공유되는 많은 architecture과 유사성이 있습니다.   
+   
+그렇다면 왜 갑자기 지난 몇년 동안에 유명해졌을까요??   
+ - Computation
+  - Moore's law 덕분에, 우리는 매년 점점 더 빨라지는 computer를 갖게 되엇습니다.
+  (TR(트랜지스터)의 수가 90년대와 오늘 날 사이에 몇 자리수가 증가했습니다.)
+  - super parallelizable이 가능한 graphic processing units 또는 GPU의 출현
 
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-33](https://user-images.githubusercontent.com/105587839/201809561-e6abfa85-d0da-4b7c-a66f-8aa4b4fc278e.jpg)
