@@ -164,27 +164,74 @@ SIFT(Scale-Invariant-Feature Transform)-David Lowe
    
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-18](https://user-images.githubusercontent.com/105587839/201809412-afa3b332-3810-47a4-91d9-690aac092683.jpg)
-
-
-
+   
+image의 diagnostic features인 features인 동일한 building block을 사용하여 한 단계 더 나아가 전체적인 scenes를 recognize하기 시작했습니다.   
+위의 ppt는 Spatial Pyramid Matching이라는 algorithm의 예입니다.   
+아이디어는 어떤 유형의 장면인지(ex.풍경, 부엌, 고속도로 등)에 대한 단서를 제공할 수 있는 image의 features가 있다는 것입니다.   
+이 특정 작업은 이미지의 다른 부분과 다른 resoulution(해상도)에서 이러한 features을 가져와 feature descriptor에 결합한 다음 그 위에 벡터 머신 알고리즘(SVM)을 지원합니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-19](https://user-images.githubusercontent.com/105587839/201809423-87b6e651-b920-4efe-aa96-6856e7043346.jpg)
-
-
+    
+features를 잘 조합하여 인체를 보다 사실적인 image로 구성하고 recongize할 수 있는 방법을 살펴보는 작업이 많이 있었습니다.   
+그래서 그 중 한 작업은 **"Histogram of gradients"** 그리고 다른 work는 "Deformable Part Models"입니다.   
+   
+60년대, 70년대, 80년대에서 21세기로 오면서 한 가지 변화가 있었고 image의 quality가 더 이상 필요없었다는 것입니다.   
+   
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-20](https://user-images.githubusercontent.com/105587839/201809430-80f53ac4-d890-474c-9093-edf278540001.jpg)
-
-
-
+   
+computer vision을 연구하기 위해 더 좋고 더 나은 data를 가지고 있었습니다.   
+그래서 2000년대 초반의 결과 중 하나는 computer vision 분야가 해결해야하는 매우 중요한 building block 문제를 정의했다는 것입니다.  
+recognition측면에서 해결해야할 매우 중요한 문제인 **"Object Recognition"** 입니다.   
+    
+2000년대 초에 우리는 object recognition의 진행 상황을 측정할 수 있는 benchmark dataset을 갖기 시작했습니다.   
+가장 영향력 있는 benchmark dataset 중 하나는 PASCAL Visual Object Challenge라고하며 20개의 object classes로 구성된 dataset이며 그 중 3개인 Train, Airplane, Person 입니다.   
+dataset은 category당 수천에서 만개의 image로 구성되며 field의 다른 groups은 testset에 대해 test할 algorithm을 개발하고 우리가 어떻게 진행되었는지 확인합니다.   
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-21](https://user-images.githubusercontent.com/105587839/201809436-a1246e56-475c-4eec-94a3-c38354a08315.jpg)
-
-
+   
+대부분의 Machine Learning algorithm은 graphical model이든, SVM이든, AdaBoost이든 상관없이 training process에서 overfit될 가능성이 매우 높습니다.   
+문제는 visual data는 매우 complex합니다.   
+즉, model이 복잡하기 때문에 input의 차원이 높고 많은 parameters를 맞춰야하는 경량이 있으며 training data가 충분치 않으면 overfitting이 매우 빠르게 발생합니다.   
+그러면 우리는 generalize할 수 없습니다.   
+   
+이 두 가지 이유에 동기를 부여하여
+  - 모든 objects의 세계를 recognize하고 싶습니다.
+  - Machine Learning으로 overfitting의 bottleneck(병목현상)을 극복하고 싶습니다.
+   
+우리는 **"ImageNet"** project를 시작했습니다.   
+이는 우리가 찾을 수 있는 모든 image, object의 세계에 대한 가능한 가장 큰 dataset을 모아 benchmark뿐만 아니라 training에 사용하기를 원했습니다.    
+그래서 그것은 우리에게 약 3년이 걸렸고 많은 노력을 기울인 project였습니다.   
+기본적으로 수만 개의 object class인 WordNet이라는 사전에 의해 조직된 인터넷에서 수십억 개의 image를 download하는 것으로 시작되었으며, Amazon Mechanical Turk platform을 사용하여 sort(정렬), clean, label을 지정하는 clever한 crowd engineering을 사용해야 합니다.   
+   
+최종 결과, 거의 1,500만 개 또는 4천만 개 이상의 images가 2만 2천개의 objects 및 scenes의 categories로 구성된 Image Net이며 이것은 당시 AI분야에서 생산된 거대하고 아마도 가장 큰 dataset입니다.   
+      
 
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-22](https://user-images.githubusercontent.com/105587839/201809444-1e943bb4-bc53-44a7-92c5-fe67b94576c1.jpg)
-
-
+   
+Object recognition의 algorithm 개발을 다른 단계로 진행합니다.    
+특히, 중요한 것은 진행 상황을 benchmark하는 방법이므로 2009년부터 IamgeNet팀은 ImageNet Large-Scale Visual Recognition challenge라는 국제 challenge를 시작했으며 이 challenge를 위해 1,000개의 object class에 걸쳐 140만 개의 object로 구성된 보다 엄격한 testset을 구성했습니다.   
+computer vision algorithm에 대한 image classification recognition 결과를 test합니다.   
+   
+위에 예시 사진이 있습니다.   
+alogorithm이 5개의 label을 출력할 수 있고 상위 5개의 label에 이 image의 올바른 object가 포함되어 있으면 이를 성공이라고 합니다.    
+   
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-23](https://user-images.githubusercontent.com/105587839/201809448-14e1cb6d-a091-4176-8d0e-a72a45131e17.jpg)
+   
+여기 ImageNet challenge의 결과 요약이 있습니다.   
+2010년부터 2015년까지 image classification result가 있습니다.   
+2010~2015년 동안 image classification result이고 x축에는 연도가 표시, y축에는 error rate가 표시됩니다.   
+error rate는 꾸준히 감소하여 error rate가 매우 낮아 인간이 할수 있는것과 동등하다는 것입니다.   
+ImageNet Challenge에 참가한 computer였습니다.   
+   
+따라서, object recognition의 모든 문제를 해결하지는 못했지만 실제 응용 프로그램에서 허용할 수 없는 error rate에서 동등한 수준으로 나아가는 데 많은 진전이 있었습니다.   
+ImageNet Challenge에서 인간과 동등하게 이 분야는 불과 몇 년이 걸렸습니다.   
+이 중 2012년 error rate는 급격히 낮아졌고 그 해의 우승 algorithm은 **CNN model**입니다.   
+    
+***
 
 
+##
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-24](https://user-images.githubusercontent.com/105587839/201809457-5906217b-441a-434f-9551-7e379912111d.jpg)
 
 
