@@ -231,15 +231,21 @@ ImageNet Challenge에서 인간과 동등하게 이 분야는 불과 몇 년이 
 ***
 
 
-##
-![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-24](https://user-images.githubusercontent.com/105587839/201809457-5906217b-441a-434f-9551-7e379912111d.jpg)
-
-
+## CS231n의 Overview
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-25](https://user-images.githubusercontent.com/105587839/201809465-028b81a0-7dd1-476e-909c-6706bb368814.jpg)
-
-
+   
+이 수업은 visual recognition-image classification에 중점을 둡니다.   
+따라서 이 수업의 주요 초점은 ImageNet Challenge의 맥락에서 약간 미리 본 image classification problem입니다.   
+   
+Image classification에서 setup은 algorithm이 image를 본 다음 fixed된 categories 사이에서 선택하여 해당 image를 classification하는 것입니다.   
+인위적으로 보일수 있지만 실제로 일반적입니다.   
+   
+그러나 이 과정에서는 image classificatio을 위해 개발하는 많은 tools를 기반으로 하는 몇 가지 다른 visual recognition problems에 대해서도 이야기할 것입니다.   
+object detection이나 image captioning과 같은 다른 문제에 대해 이야기하겠습니다.   
+  
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-26](https://user-images.githubusercontent.com/105587839/201809476-362a5914-9ecc-4bc9-b70e-092dc81aa91b.jpg)
-
+   
+따라서, Object detection의 setup은 약간 다릅니다.
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-27](https://user-images.githubusercontent.com/105587839/201809481-c7318103-ecf5-430b-b513-6151199b930e.jpg)
 
 
