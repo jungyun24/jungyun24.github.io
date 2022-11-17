@@ -231,7 +231,7 @@ ImageNet Challenge에서 인간과 동등하게 이 분야는 불과 몇 년이 
 ***
 
 
-## CS231n의 Overview
+### CS231n의 Overview
 ![bfece0e701ea4502eefa396d166da777rpczjE82RwKejnPq-25](https://user-images.githubusercontent.com/105587839/201809465-028b81a0-7dd1-476e-909c-6706bb368814.jpg)
    
 이 수업은 visual recognition-image classification에 중점을 둡니다.   
