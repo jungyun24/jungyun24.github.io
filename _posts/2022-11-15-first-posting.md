@@ -294,12 +294,12 @@ image에서 object가 잇는 loaction을 설명하는 box를 그립니다.
 2012년의 architecture에는 90년대로 거슬러 올라가는 이 network와 공유되는 많은 architecture과 유사성이 있습니다.   
    
 그렇다면 왜 갑자기 지난 몇년 동안에 유명해졌을까요??   
- - Computation
+- Computation
   - Moore's law 덕분에, 우리는 매년 점점 더 빨라지는 computer를 갖게 되었습니다.
   - TR(트랜지스터)의 수가 90년대와 오늘 날 사이에 몇 자리수가 증가했습니다.
   - super parallelizable이 가능한 graphic processing units 또는 GPU의 출현
 
- - Data
+- Data
   - 이러한 algorithm은 data를 많이 필요로 합니다.
   - 90년대에는 사용할 수 있는 label이 지정된 data가 많이 않았습니다.
   - PASCAL 및 ImageNet과 같은 고품질의 dataset이 있습니다.
