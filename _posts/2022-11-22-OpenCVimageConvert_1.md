@@ -132,7 +132,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![output](KJY_output.png)
+<img width="1246" alt="KJY_output" src="https://user-images.githubusercontent.com/105587839/203203863-c6fff225-1ca2-41f6-8583-e2f0e542c27b.png">
 
 
 ### Show image shape
@@ -191,7 +191,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![output](KJY_Change.png)
+![KJY_Change](https://user-images.githubusercontent.com/105587839/203203981-66327630-36f0-43ca-a0a2-64cc6ed5a7a7.png)
+
 
 
 ### Draw rectangle
@@ -222,7 +223,8 @@ Parameters:
    - thickness(int)
 
 
-![output](KJY_rect.png)
+![KJY_rect](https://user-images.githubusercontent.com/105587839/203204066-cf581cc4-17e0-47b5-af03-a1624de0c47d.png)
+
 
 
 ### Draw circle
@@ -252,7 +254,8 @@ Parameters:
    - thickness(int), if you write -1, fill the inside
 
 
-![output](KJY_circle.png)
+![KJY_circle](https://user-images.githubusercontent.com/105587839/203204187-39ffaa38-c6d3-4052-ba18-c5d497bc0706.png)
+
 
 
 ### Draw line
@@ -282,7 +285,8 @@ Parameters:
    - thickness(int), if you write -1, fill the inside
 
 
-![Output](KJY_line.png)
+![KJY_line](https://user-images.githubusercontent.com/105587839/203204283-981defdd-85f6-4beb-81f0-b20ab400e0e5.png)
+
 
 
 ### Input text
@@ -313,6 +317,6 @@ Parameters:
 
    - color - BGR
 
+![KJY_text](https://user-images.githubusercontent.com/105587839/203204348-ad61a11c-1fc2-405d-b907-36faf0ebc827.png)
 
-![output](KJY_text.png)
 
