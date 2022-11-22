@@ -207,7 +207,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-***cv2.rectangle(*img*,*start*, *end*, *color*, *thickness*)***    
+***cv2.rectangle(*img*,*start*, *end*, *color*, *thickness*)**    
 
 Parameters:
 
@@ -237,7 +237,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-***cv2.circle(*img*,*center*, *radian*, *color*, *thickness*)***    
+***cv2.circle(*img*,*center*, *radian*, *color*, *thickness*)**    
 
 Parameters:
 
@@ -267,7 +267,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-***cv2.line(*img*,*start*, *end*, *color*, *thickness*)***    
+***cv2.line(*img*,*start*, *end*, *color*, *thickness*)**    
 
 Parameters:
 
@@ -297,7 +297,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-***cv2.putText(*img*,*text*, *org*, *font*, *fontScale*, *color*)***    
+***cv2.putText(*img*,*text*, *org*, *font*, *fontScale*, *color*)**    
 
 Parameters:
 
