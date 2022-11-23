@@ -122,7 +122,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](jpg)
+![01 jpg](https://user-images.githubusercontent.com/105587839/203474968-f03280be-2874-4ca8-88bc-66fba85df666.png)
+
 
 
 ## Image Rotation
@@ -141,7 +142,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](02)
+![02](https://user-images.githubusercontent.com/105587839/203474988-04b5630b-5610-4764-a3cc-24b341378a4d.png)
+
 
 
 ## Resize
@@ -165,7 +167,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](03)
+![03](https://user-images.githubusercontent.com/105587839/203474995-eb57946d-7765-4ecf-9b85-41fbfd03c250.png)
+
 
 
 ## Symmetry
@@ -183,9 +186,6 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](04)
+![04](https://user-images.githubusercontent.com/105587839/203475002-799cf25e-75f4-45d1-a075-538e10912a76.png)
 
 
-
-```python
-```
