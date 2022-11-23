@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "OpenCV Image Convert"
-categories: Until YOLO
+categories: Until_YOLO
 tag: [coding, opencv, convert, image, python, computervision]
 toc: true
 author_profile: false
