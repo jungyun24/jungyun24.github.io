@@ -120,7 +120,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](01)
+![01](https://user-images.githubusercontent.com/105587839/203484022-61b93ded-9f6c-492f-9fa2-1577242a9e7c.png)
 
 
 The mask is still black, so I will correct it.
@@ -155,7 +155,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](02)
+![02](https://user-images.githubusercontent.com/105587839/203484033-a5aee101-345b-42af-9312-b30b278e993c.png)
+
 
 
 ## Bitwise_and
@@ -177,7 +178,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](03)
+![03](https://user-images.githubusercontent.com/105587839/203484048-26148eff-f64c-47ac-b548-5086d70dad0f.png)
+
 
 
 # Channel manipulation
@@ -219,7 +221,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](04)
+![04](https://user-images.githubusercontent.com/105587839/203484065-a0d803ab-7b09-421f-af0b-6598fb90e170.png)
+
 
 
 Color가 잘 안나온다.  
@@ -239,7 +242,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](05)
+![05](https://user-images.githubusercontent.com/105587839/203484074-c71011ba-8fb7-4aca-92d5-718af582ff62.png)
+
 
 
 ### Other Filters
@@ -261,7 +265,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-!()[06]
+![06](https://user-images.githubusercontent.com/105587839/203484086-bcd5398e-bab4-44c7-8d04-6ae35be34e13.png)
+
 
 
 
