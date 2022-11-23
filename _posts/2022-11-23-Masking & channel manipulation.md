@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Masking & channel manipulation"
+title:  "03 Masking & channel manipulation"
 categories: Until_YOLO
 tag: [coding, opencv, convert, image, python, computervision]
 toc: true
