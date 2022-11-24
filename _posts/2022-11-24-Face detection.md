@@ -289,7 +289,7 @@ cv2.destroyAllWindows()
 ## Increase recognition
 
 
-<성능이 낮은 이유>
+성능이 낮은 이유
 
 1. image 수가 적다
 
