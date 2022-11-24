@@ -165,7 +165,7 @@ cv2.destroyAllWindows()
 <pre>
 Number of faces detected: 6
 </pre>
-![](01)
+![01](https://user-images.githubusercontent.com/105587839/203671211-566cac83-134a-42f2-9890-2feb5acf0c32.png)
 
 
 ## Face Alignment
@@ -282,7 +282,8 @@ cv2.destroyAllWindows()
 <pre>
 [[333 393]] [[353 390]]
 </pre>
-![](02)
+
+![02](https://user-images.githubusercontent.com/105587839/203671202-ad0cdc7d-9e3d-4133-bf93-2fe614cbe569.png)
 
 
 ## Increase recognition
@@ -388,7 +389,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](03)
+![03](https://user-images.githubusercontent.com/105587839/203671224-1fa061ca-663d-4ca1-8dfe-7a933b493de3.png)
 
 
 EA 마크를 얼굴로 잘못 인식한 경우도 볼 수 있다.
