@@ -395,6 +395,3 @@ cv2.destroyAllWindows()
 EA 마크를 얼굴로 잘못 인식한 경우도 볼 수 있다.
 
 
-
-```python
-```

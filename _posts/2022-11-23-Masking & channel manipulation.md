@@ -268,6 +268,3 @@ cv2.destroyAllWindows()
 
 
 
-
-```python
-```
