@@ -122,11 +122,11 @@ cv2.imshow("Face Landmark", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![a](https://user-images.githubusercontent.com/105587839/207239694-2bf30836-25a0-44a6-8486-71cd3f5b2e30.png)
 
 <pre>
 Number of faces detected: 1
 </pre>
-![picture](a)
 
 
 점들의 Euclidean Distance를 활용하여 눈이 떠있는지 판단할 수 있다.
@@ -135,7 +135,8 @@ Number of faces detected: 1
 ## EAR
 
 
-![picture](b)
+![b](https://user-images.githubusercontent.com/105587839/207239713-93dee8ae-6bf7-4cad-a381-61ae455b2012.jpg)
+
 
 
 - 각 눈은 눈의 왼쪽 corner에서 시작하여 6(x, y)좌표로 표시된 다음 나머지 영역에서 시계 방향으로 작동
@@ -144,10 +145,10 @@ Number of faces detected: 1
 
 - Soukupová와 Čech의 Real-Time Eye Blink Detection using Facial Landmarks,2016 논문에서 face landmark를 사용한 실시간 눈 깜박임 감지를 기반으로 eye aspect ratio(EAR)라고하는이 관계를 반영하는 방정식을 도출 할 수 있습니다.
 
+![c](https://user-images.githubusercontent.com/105587839/207239818-0f5866f7-d019-47d5-923c-c371d0520aee.jpg)
 
-![picture](c)
-
-
+   
+  
 ## face_drowsiness detection
 
 
@@ -325,7 +326,5 @@ Frame time 0.052 seconds
 Frame time 0.052 seconds
 Frame time 0.049 seconds
 </pre>
+![d](https://user-images.githubusercontent.com/105587839/207239770-64e91d18-6e0d-47d7-87c2-b78415c21906.png)
 
-```python
-![picture](d)
-```
