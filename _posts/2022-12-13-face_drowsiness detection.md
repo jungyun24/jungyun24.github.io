@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "05 face_drowsiness detection"
+title:  "05 face drowsiness detection"
 categories: Until_YOLO
-tag: [python, opencv, face detection, drowsiness]
+tag: [coding, opencv, convert, image, python, computervision]
 toc: true
 author_profile: false
 sidebar:
@@ -81,6 +81,7 @@ sidebar:
 </head>
 
 
+# Drowsiness Detection
 
 ```python
 import numpy as np
