@@ -5,7 +5,8 @@ categories: Until_YOLO
 tag: [python, opencv, face detection, drowsiness]
 toc: true
 author_profile: false
- nav: "docs"
+sidebar:
+  nav: "docs"
 ---
 
 <head>
