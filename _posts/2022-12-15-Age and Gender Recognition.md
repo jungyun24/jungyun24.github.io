@@ -238,7 +238,8 @@ main.mainloop()
 <pre>
 Frame 0 time 0.135 seconds
 </pre>
-![]()
+
+![A1](https://user-images.githubusercontent.com/105587839/207778470-117fdc45-fc6d-4267-b49c-024ff92d3d14.png)
 
 
 
@@ -1188,5 +1189,5 @@ Male  99.95 %
 Female  0.05 %
 Frame time 0.060 seconds
 </pre>
-![]()
+![A2](https://user-images.githubusercontent.com/105587839/207778534-e47027ab-50e5-46ee-b314-d65659153939.png)
 
