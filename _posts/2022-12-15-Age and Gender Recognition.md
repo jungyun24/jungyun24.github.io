@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "06 Age and Gender Recognition"
-categories: until_YOLO
+categories: Until_YOLO
 tag: [python, code, age recogniton, recognition, gender recognition]
 toc: true
 author_profile: false
