@@ -82,7 +82,7 @@ sidebar:
 
 
 **본 게시글은 패스트캠퍼스 [혁펜하임의 AI DEEP DIVE] 체험단 활동을 위해 작성되었습니다.**
-
+강의 링크 : https://bit.ly/3GV73FN
 
 
 # 혁펜하임의 AI DEEP DIVE 1
