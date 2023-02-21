@@ -81,7 +81,8 @@ sidebar:
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9AMeeRL9Wmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-Jupyter Notebook : https://drive.google.com/file/d/1BoYpoF6OoYRM--eaYwiTe7TGsJx6EWRg/view?usp=sharing
+
+Jupyter Notebook 자료 : https://drive.google.com/file/d/1BoYpoF6OoYRM--eaYwiTe7TGsJx6EWRg/view?usp=sharing
 
 # 신경망 생성
 
