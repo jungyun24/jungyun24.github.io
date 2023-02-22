@@ -82,8 +82,9 @@ sidebar:
 
 # 파이토치 CIFAR10 모델
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E-LodDU6pIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-- 코드 출처: https://tutorials.pytorch.kr/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py
-- Jupyter Notebook 자료 : https://drive.google.com/file/d/1Yx4bqbXtZt6y-1ynJOLkAm9Cp0f2BxDi/view?usp=sharing
+- 코드 출처: https://tutorials.pytorch.kr/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py  
+- 
+- Jupyter Notebook 자료 : https://drive.google.com/file/d/1Yx4bqbXtZt6y-1ynJOLkAm9Cp0f2BxDi/view?usp=sharing  
 
 ## modules import
 
