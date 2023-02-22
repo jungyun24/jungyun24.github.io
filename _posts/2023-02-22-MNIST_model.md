@@ -82,8 +82,8 @@ sidebar:
 
 
 # 파이토치 MNIST 모델
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IwLOWwrz26w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Jupyter Notebook 자료 : https://drive.google.com/file/d/1EFnm57qVjID9cU-FbX1Hy-vgNDqq5iqe/view?usp=sharing
 ## modules import 
 
 
